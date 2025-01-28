@@ -65,13 +65,20 @@ def normalize_transferMap(rawWaferCoordinatesMap, offsetX, offsetY):
 
 
 # Retrieve the arguments passed from the caller script
-arg1 = sys.argv[1]
-print(f"{arg1}:")
+arg1 = sys.argv[1] # file_path
+arg2 = sys.argv[2] # offsetX
+arg3 = sys.argv[3] # offsetY
+print(f"arg1= {arg1}:")
+print(f"arg2= {arg2}")
+print(f"arg3= {arg3}")
 
-# Calculate offset
-offsetX = 1
-offsetY = 1
-
+# min_offset (X, Y), convert to integer
+if len(arg2) | len(arg3):
+    offsetX = int(arg2)
+    offsetY = int(arg3)
+else:
+    offsetX = 0
+    offsetY = 0
 nonNormalizedWaferCoordinatesMap= read_transferMap(arg1)
 normalizedWaferCoordinatesMap= normalize_transferMap(nonNormalizedWaferCoordinatesMap, offsetX, offsetY)
 print(f"Before normalized: {nonNormalizedWaferCoordinatesMap}")

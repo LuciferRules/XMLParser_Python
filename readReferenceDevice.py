@@ -75,14 +75,18 @@ if __name__ == "__main__":
                 tupleCoord = (coords[0], coords[1])  # Create a tuple directly
                 print(f"  {name}: X={coords[0]}, Y={coords[1]}")
                 UWMRefDieArray.append(tupleCoord)
+        else:
+            print(f"Reference Devices is missing in {file_path}!")
 
         # Call the calculate_offset function
         # Define WaferDie coordinates
         WaferDie1 = (40, 13) # TODO: modify
         WaferDie2 = (6, 7) # TODO: modify
-        WaferDieArray = []
-        WaferDieArray.append(WaferDie1)
-        WaferDieArray.append(WaferDie2)
+        WaferDieArray = [WaferDie1, WaferDie2]
+        # WaferDieArray.append(WaferDie1)
+        # WaferDieArray.append(WaferDie2)
+        offsetX = ""
+        offsetY = ""
 
         if len(UWMRefDieArray):
             print(f"UWMRefDieArray= {UWMRefDieArray}")
@@ -90,7 +94,15 @@ if __name__ == "__main__":
             # Calculate Minimum offset for WaferDie
             min_offset = calculate_offset(UWMRefDieArray, WaferDieArray)
             print(f"Minimum offset for WaferDie: {min_offset}")
+            offsetX = str(min_offset[0])
+            offsetY = str(min_offset[1])
+            print(type(offsetX))
 
-        # Call transferMapNormalizer.py only once after processing all files
-        subprocess.run(["python", "transferMapNormalizer.py", file_path])
+            # Call transferMapNormalizer.py only once after processing all files
+            subprocess.run(["python", "transferMapNormalizer.py", file_path, offsetX, offsetY])
+
+        else:
+            # Call transferMapNormalizer.py only once after processing all files
+            subprocess.run(["python", "transferMapNormalizer.py", file_path, offsetX, offsetY])
+
         print("-" * 30)
