@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MapData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:semi-org:xsd.E142-1.V1005.SubstrateMap">
+  <Layouts>
+    <Layout LayoutId="StripLayout" DefaultUnits="mm" TopLevel="true">
+      <Dimension X="1" Y="1" />
+      <ProductId>P000114938</ProductId>
+      <ChildLayouts>
+        <ChildLayout LayoutId="ChipLayout" />
+      </ChildLayouts>
+    </Layout>
+    <Layout LayoutId="ChipLayout" DefaultUnits="mm">
+      <Dimension X="18" Y="4" />
+    </Layout>
+  </Layouts>
+  <Substrates>
+    <Substrate SubstrateType="Strip" SubstrateId="3308922729">
+      <LotId>VE337661G02</LotId>
+      <CarrierId />
+      <SlotNumber>0</SlotNumber>
+    </Substrate>
+  </Substrates>
+  <SubstrateMaps>
+    <SubstrateMap SubstrateType="Strip" SubstrateId="3308922729" LayoutSpecifier="StripLayout/ChipLayout">
+      <Overlay MapName="BinCodeMap" MapVersion="2024071008235116">
+        <BinCodeMap BinType="Integer2" NullBin="FFFF">
+          <BinDefinitions>
+            <BinDefinition BinCode="0001" BinCount="72" BinQuality="Pass" BinDescription="Pass  bins" Pick="true" />
+            <BinDefinition BinCode="0000" BinCount="0" BinQuality="Unknown" BinDescription="Not processed" />
+          </BinDefinitions>
+          <BinCode>000100010001000100010001000100010001000100010001000100010001000100010001</BinCode>
+          <BinCode>000100010001000100010001000100010001000100010001000100010001000100010001</BinCode>
+          <BinCode>000100010001000100010001000100010001000100010001000100010001000100010001</BinCode>
+          <BinCode>000100010001000100010001000100010001000100010001000100010001000100010001</BinCode>
+        </BinCodeMap>
+      </Overlay>
+      <Overlay MapName="ExternalDeviceIdMap" MapVersion="1">
+        <DeviceIdMap>
+          <Id X="0" Y="3">0000200069</Id>
+          <Id X="1" Y="3">0000200065</Id>
+          <Id X="2" Y="3">0000200061</Id>
+          <Id X="3" Y="3">0000200057</Id>
+          <Id X="4" Y="3">0000200053</Id>
+          <Id X="5" Y="3">0000200049</Id>
+          <Id X="6" Y="3">0000200045</Id>
+          <Id X="7" Y="3">0000200041</Id>
+          <Id X="8" Y="3">0000200037</Id>
+          <Id X="9" Y="3">0000200033</Id>
+          <Id X="10" Y="3">0000200029</Id>
+          <Id X="11" Y="3">0000200025</Id>
+          <Id X="12" Y="3">0000200021</Id>
+          <Id X="13" Y="3">0000200017</Id>
+          <Id X="14" Y="3">0000200013</Id>
+          <Id X="15" Y="3">0000200009</Id>
+          <Id X="16" Y="3">0000200005</Id>
+          <Id X="17" Y="3">0000200001</Id>
+          <Id X="0" Y="2">0000200070</Id>
+          <Id X="1" Y="2">0000200066</Id>
+          <Id X="2" Y="2">0000200062</Id>
+          <Id X="3" Y="2">0000200058</Id>
+          <Id X="4" Y="2">0000200054</Id>
+          <Id X="5" Y="2">0000200050</Id>
+          <Id X="6" Y="2">0000200046</Id>
+          <Id X="7" Y="2">0000200042</Id>
+          <Id X="8" Y="2">0000200038</Id>
+          <Id X="9" Y="2">0000200034</Id>
+          <Id X="10" Y="2">0000200030</Id>
+          <Id X="11" Y="2">0000200026</Id>
+          <Id X="12" Y="2">0000200022</Id>
+          <Id X="13" Y="2">0000200018</Id>
+          <Id X="14" Y="2">0000200014</Id>
+          <Id X="15" Y="2">0000200010</Id>
+          <Id X="16" Y="2">0000200006</Id>
+          <Id X="17" Y="2">0000200002</Id>
+          <Id X="0" Y="1">0000200071</Id>
+          <Id X="1" Y="1">0000200067</Id>
+          <Id X="2" Y="1">0000200063</Id>
+          <Id X="3" Y="1">0000200059</Id>
+          <Id X="4" Y="1">0000200055</Id>
+          <Id X="5" Y="1">0000200051</Id>
+          <Id X="6" Y="1">0000200047</Id>
+          <Id X="7" Y="1">0000200043</Id>
+          <Id X="8" Y="1">0000200039</Id>
+          <Id X="9" Y="1">0000200035</Id>
+          <Id X="10" Y="1">0000200031</Id>
+          <Id X="11" Y="1">0000200027</Id>
+          <Id X="12" Y="1">0000200023</Id>
+          <Id X="13" Y="1">0000200019</Id>
+          <Id X="14" Y="1">0000200015</Id>
+          <Id X="15" Y="1">0000200011</Id>
+          <Id X="16" Y="1">0000200007</Id>
+          <Id X="17" Y="1">0000200003</Id>
+          <Id X="0" Y="0">0000200072</Id>
+          <Id X="1" Y="0">0000200068</Id>
+          <Id X="2" Y="0">0000200064</Id>
+          <Id X="3" Y="0">0000200060</Id>
+          <Id X="4" Y="0">0000200056</Id>
+          <Id X="5" Y="0">0000200052</Id>
+          <Id X="6" Y="0">0000200048</Id>
+          <Id X="7" Y="0">0000200044</Id>
+          <Id X="8" Y="0">0000200040</Id>
+          <Id X="9" Y="0">0000200036</Id>
+          <Id X="10" Y="0">0000200032</Id>
+          <Id X="11" Y="0">0000200028</Id>
+          <Id X="12" Y="0">0000200024</Id>
+          <Id X="13" Y="0">0000200020</Id>
+          <Id X="14" Y="0">0000200016</Id>
+          <Id X="15" Y="0">0000200012</Id>
+          <Id X="16" Y="0">0000200008</Id>
+          <Id X="17" Y="0">0000200004</Id>
+        </DeviceIdMap>
+      </Overlay>
+      <Overlay MapName="WaferToStrip">
+        <TransferMap FromSubstrateType="Wafer" FromSubstrateId="VE337661.04" FromLayoutSpecifier="">
+          <T FX="-1" FY="89" TX="17" TY="0" />
+          <T FX="-1" FY="89" TX="17" TY="1" />
+          <T FX="-1" FY="89" TX="17" TY="2" />
+          <T FX="-1" FY="89" TX="17" TY="3" />
+          <T FX="-1" FY="89" TX="16" TY="0" />
+          <T FX="-1" FY="89" TX="16" TY="1" />
+          <T FX="-1" FY="89" TX="16" TY="2" />
+          <T FX="-1" FY="89" TX="16" TY="3" />
+          <T FX="-1" FY="89" TX="15" TY="0" />
+          <T FX="-1" FY="89" TX="15" TY="1" />
+          <T FX="-1" FY="89" TX="15" TY="2" />
+          <T FX="-1" FY="89" TX="15" TY="3" />
+          <T FX="-1" FY="89" TX="14" TY="0" />
+          <T FX="-1" FY="89" TX="14" TY="1" />
+          <T FX="-1" FY="89" TX="14" TY="2" />
+          <T FX="-1" FY="89" TX="14" TY="3" />
+          <T FX="-1" FY="89" TX="13" TY="0" />
+          <T FX="-1" FY="89" TX="13" TY="1" />
+          <T FX="-1" FY="89" TX="13" TY="2" />
+          <T FX="-1" FY="89" TX="13" TY="3" />
+          <T FX="-1" FY="89" TX="12" TY="0" />
+          <T FX="-1" FY="89" TX="12" TY="1" />
+          <T FX="-1" FY="89" TX="12" TY="2" />
+          <T FX="-1" FY="89" TX="12" TY="3" />
+          <T FX="-1" FY="89" TX="11" TY="0" />
+          <T FX="-1" FY="89" TX="11" TY="1" />
+          <T FX="-1" FY="89" TX="11" TY="2" />
+          <T FX="-1" FY="89" TX="11" TY="3" />
+          <T FX="-1" FY="89" TX="10" TY="0" />
+          <T FX="-1" FY="89" TX="10" TY="1" />
+          <T FX="-1" FY="89" TX="10" TY="2" />
+          <T FX="-1" FY="89" TX="10" TY="3" />
+          <T FX="-1" FY="89" TX="9" TY="0" />
+          <T FX="-1" FY="89" TX="9" TY="1" />
+          <T FX="-1" FY="89" TX="9" TY="2" />
+          <T FX="-1" FY="89" TX="9" TY="3" />
+          <T FX="-1" FY="89" TX="8" TY="0" />
+          <T FX="-1" FY="89" TX="8" TY="1" />
+          <T FX="-1" FY="89" TX="8" TY="2" />
+          <T FX="-1" FY="89" TX="8" TY="3" />
+          <T FX="-1" FY="89" TX="7" TY="0" />
+          <T FX="-1" FY="89" TX="7" TY="1" />
+          <T FX="-1" FY="89" TX="7" TY="2" />
+          <T FX="-1" FY="89" TX="7" TY="3" />
+          <T FX="-1" FY="89" TX="6" TY="0" />
+          <T FX="-1" FY="89" TX="6" TY="1" />
+          <T FX="-1" FY="89" TX="6" TY="2" />
+          <T FX="-1" FY="89" TX="6" TY="3" />
+          <T FX="-1" FY="89" TX="5" TY="0" />
+          <T FX="-1" FY="89" TX="5" TY="1" />
+          <T FX="-1" FY="89" TX="5" TY="2" />
+          <T FX="-1" FY="89" TX="5" TY="3" />
+          <T FX="-1" FY="89" TX="4" TY="0" />
+          <T FX="-1" FY="89" TX="4" TY="1" />
+          <T FX="-1" FY="89" TX="4" TY="2" />
+          <T FX="-1" FY="89" TX="4" TY="3" />
+          <T FX="-1" FY="89" TX="3" TY="0" />
+          <T FX="-1" FY="89" TX="3" TY="1" />
+          <T FX="-1" FY="89" TX="3" TY="2" />
+          <T FX="-1" FY="89" TX="3" TY="3" />
+          <T FX="-1" FY="89" TX="2" TY="0" />
+          <T FX="-1" FY="89" TX="2" TY="1" />
+          <T FX="-1" FY="89" TX="2" TY="2" />
+          <T FX="-1" FY="89" TX="2" TY="3" />
+          <T FX="-1" FY="89" TX="1" TY="0" />
+          <T FX="-1" FY="89" TX="1" TY="1" />
+          <T FX="-1" FY="89" TX="1" TY="2" />
+          <T FX="-1" FY="89" TX="1" TY="3" />
+          <T FX="-1" FY="89" TX="0" TY="0" />
+          <T FX="-1" FY="89" TX="0" TY="1" />
+          <T FX="-1" FY="89" TX="0" TY="2" />
+          <T FX="-1" FY="89" TX="0" TY="3" />
+        </TransferMap>
+      </Overlay>
+      <Overlay MapName="OpticalMultiChipID:StripMultiChipID" MapVersion="1">
+        <DeviceIdMap>
+          <Id X="0" Y="3">0000200069:HSOF-8TW:MKZ</Id>
+          <Id X="1" Y="3">0000200065:HSOF-8TW:MKZ</Id>
+          <Id X="2" Y="3">0000200061:HSOF-8TW:MKZ</Id>
+          <Id X="3" Y="3">0000200057:HSOF-8TW:MKZ</Id>
+          <Id X="4" Y="3">0000200053:HSOF-8TW:MKZ</Id>
+          <Id X="5" Y="3">0000200049:HSOF-8TW:MKZ</Id>
+          <Id X="6" Y="3">0000200045:HSOF-8TW:MKZ</Id>
+          <Id X="7" Y="3">0000200041:HSOF-8TW:MKZ</Id>
+          <Id X="8" Y="3">0000200037:HSOF-8TW:MKZ</Id>
+          <Id X="9" Y="3">0000200033:HSOF-8TW:MKZ</Id>
+          <Id X="10" Y="3">0000200029:HSOF-8TW:MKZ</Id>
+          <Id X="11" Y="3">0000200025:HSOF-8TW:MKZ</Id>
+          <Id X="12" Y="3">0000200021:HSOF-8TW:MKZ</Id>
+          <Id X="13" Y="3">0000200017:HSOF-8TW:MKZ</Id>
+          <Id X="14" Y="3">0000200013:HSOF-8TW:MKZ</Id>
+          <Id X="15" Y="3">0000200009:HSOF-8TW:MKZ</Id>
+          <Id X="16" Y="3">0000200005:HSOF-8TW:MKZ</Id>
+          <Id X="17" Y="3">0000200001:HSOF-8TW:MKZ</Id>
+          <Id X="0" Y="2">0000200070:HSOF-8TW:MKZ</Id>
+          <Id X="1" Y="2">0000200066:HSOF-8TW:MKZ</Id>
+          <Id X="2" Y="2">0000200062:HSOF-8TW:MKZ</Id>
+          <Id X="3" Y="2">0000200058:HSOF-8TW:MKZ</Id>
+          <Id X="4" Y="2">0000200054:HSOF-8TW:MKZ</Id>
+          <Id X="5" Y="2">0000200050:HSOF-8TW:MKZ</Id>
+          <Id X="6" Y="2">0000200046:HSOF-8TW:MKZ</Id>
+          <Id X="7" Y="2">0000200042:HSOF-8TW:MKZ</Id>
+          <Id X="8" Y="2">0000200038:HSOF-8TW:MKZ</Id>
+          <Id X="9" Y="2">0000200034:HSOF-8TW:MKZ</Id>
+          <Id X="10" Y="2">0000200030:HSOF-8TW:MKZ</Id>
+          <Id X="11" Y="2">0000200026:HSOF-8TW:MKZ</Id>
+          <Id X="12" Y="2">0000200022:HSOF-8TW:MKZ</Id>
+          <Id X="13" Y="2">0000200018:HSOF-8TW:MKZ</Id>
+          <Id X="14" Y="2">0000200014:HSOF-8TW:MKZ</Id>
+          <Id X="15" Y="2">0000200010:HSOF-8TW:MKZ</Id>
+          <Id X="16" Y="2">0000200006:HSOF-8TW:MKZ</Id>
+          <Id X="17" Y="2">0000200002:HSOF-8TW:MKZ</Id>
+          <Id X="0" Y="1">0000200071:HSOF-8TW:MKZ</Id>
+          <Id X="1" Y="1">0000200067:HSOF-8TW:MKZ</Id>
+          <Id X="2" Y="1">0000200063:HSOF-8TW:MKZ</Id>
+          <Id X="3" Y="1">0000200059:HSOF-8TW:MKZ</Id>
+          <Id X="4" Y="1">0000200055:HSOF-8TW:MKZ</Id>
+          <Id X="5" Y="1">0000200051:HSOF-8TW:MKZ</Id>
+          <Id X="6" Y="1">0000200047:HSOF-8TW:MKZ</Id>
+          <Id X="7" Y="1">0000200043:HSOF-8TW:MKZ</Id>
+          <Id X="8" Y="1">0000200039:HSOF-8TW:MKZ</Id>
+          <Id X="9" Y="1">0000200035:HSOF-8TW:MKZ</Id>
+          <Id X="10" Y="1">0000200031:HSOF-8TW:MKZ</Id>
+          <Id X="11" Y="1">0000200027:HSOF-8TW:MKZ</Id>
+          <Id X="12" Y="1">0000200023:HSOF-8TW:MKZ</Id>
+          <Id X="13" Y="1">0000200019:HSOF-8TW:MKZ</Id>
+          <Id X="14" Y="1">0000200015:HSOF-8TW:MKZ</Id>
+          <Id X="15" Y="1">0000200011:HSOF-8TW:MKZ</Id>
+          <Id X="16" Y="1">0000200007:HSOF-8TW:MKZ</Id>
+          <Id X="17" Y="1">0000200003:HSOF-8TW:MKZ</Id>
+          <Id X="0" Y="0">0000200072:HSOF-8TW:MKZ</Id>
+          <Id X="1" Y="0">0000200068:HSOF-8TW:MKZ</Id>
+          <Id X="2" Y="0">0000200064:HSOF-8TW:MKZ</Id>
+          <Id X="3" Y="0">0000200060:HSOF-8TW:MKZ</Id>
+          <Id X="4" Y="0">0000200056:HSOF-8TW:MKZ</Id>
+          <Id X="5" Y="0">0000200052:HSOF-8TW:MKZ</Id>
+          <Id X="6" Y="0">0000200048:HSOF-8TW:MKZ</Id>
+          <Id X="7" Y="0">0000200044:HSOF-8TW:MKZ</Id>
+          <Id X="8" Y="0">0000200040:HSOF-8TW:MKZ</Id>
+          <Id X="9" Y="0">0000200036:HSOF-8TW:MKZ</Id>
+          <Id X="10" Y="0">0000200032:HSOF-8TW:MKZ</Id>
+          <Id X="11" Y="0">0000200028:HSOF-8TW:MKZ</Id>
+          <Id X="12" Y="0">0000200024:HSOF-8TW:MKZ</Id>
+          <Id X="13" Y="0">0000200020:HSOF-8TW:MKZ</Id>
+          <Id X="14" Y="0">0000200016:HSOF-8TW:MKZ</Id>
+          <Id X="15" Y="0">0000200012:HSOF-8TW:MKZ</Id>
+          <Id X="16" Y="0">0000200008:HSOF-8TW:MKZ</Id>
+          <Id X="17" Y="0">0000200004:HSOF-8TW:MKZ</Id>
+        </DeviceIdMap>
+      </Overlay>
+    </SubstrateMap>
+    <SubstrateMap SubstrateType="Wafer" SubstrateId="VE337661.04" LayoutSpecifier="MotherlotWafer/WaferChipLayout" Orientation="0" OriginLocation="LowerLeft" AxisDirection="UpRight" SubstrateSide="TopSide">
+      <Overlay MapName="ReferenceDies">
+        <ReferenceDevices>
+          <ReferenceDevice Name="UWMRefDie1">
+            <Coordinates X="7" Y="9" />
+          </ReferenceDevice>
+          <ReferenceDevice Name="UWMRefDie2">
+            <Coordinates X="33" Y="9" />
+          </ReferenceDevice>
+        </ReferenceDevices>
+      </Overlay>
+    </SubstrateMap>
+  </SubstrateMaps>
+</MapData>
