@@ -2,11 +2,12 @@
 import sys
 import os
 import xml.etree.ElementTree as ET
+from ExcelWorksheet_Transformer.excelTransformer import data_to_csv
 
 
 def read_transferMap(file_path):
     """
-    Reads ReferenceDevice elements from an XML file and extracts their coordinates.
+    Reads TransferMap elements from an XML file and extracts their coordinates.
 
     Args:
         file_path: Path to the XML file.
@@ -63,6 +64,24 @@ def normalize_transferMap(rawWaferCoordinatesMap, offsetX, offsetY):
 
     return normalizedWaferCoordinatesMap
 
+def extract_strip_id(file_path):
+    """
+    Extracts the strip ID from the given file path.
+
+    Args:
+      file_path: The path to the file.
+
+    Returns:
+      The extracted strip ID, or None if it cannot be found.
+    """
+    try:
+        file_name = os.path.basename(file_path)
+        parts = file_name.split("_")
+        strip_id = parts[3]
+        return strip_id
+    except IndexError:
+        return None
+
 
 # Retrieve the arguments passed from the caller script
 arg1 = sys.argv[1] # file_path
@@ -79,7 +98,20 @@ if len(arg2) | len(arg3):
 else:
     offsetX = 0
     offsetY = 0
+
+# read transferMap and normalize
 nonNormalizedWaferCoordinatesMap= read_transferMap(arg1)
 normalizedWaferCoordinatesMap= normalize_transferMap(nonNormalizedWaferCoordinatesMap, offsetX, offsetY)
 print(f"Before normalized: {nonNormalizedWaferCoordinatesMap}")
 print(f"After normalized: {normalizedWaferCoordinatesMap}")
+
+# read strip id from filename
+stripId = extract_strip_id(arg1)
+print(f"stripID= {stripId}")
+
+# write to csv file
+# get key from normalizedWaferCoordinatesMap
+waferId = list(normalizedWaferCoordinatesMap.keys())[0]
+print(f"waferID= {waferId}")
+data_to_csv(normalizedWaferCoordinatesMap, f"output/{stripId}_{waferId}_tableau_data.csv")
+print(f"normalizedWaferCoordinatesMap written into output/{stripId}_{waferId}_tableau_data.csv file")
