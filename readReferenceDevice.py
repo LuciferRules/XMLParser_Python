@@ -98,11 +98,7 @@ if __name__ == "__main__":
             offsetY = str(min_offset[1])
             print(type(offsetX))
 
-            # Call transferMapNormalizer.py only once after processing all files
-            subprocess.run(["python", "transferMapNormalizer.py", file_path, offsetX, offsetY])
-
-        else:
-            # Call transferMapNormalizer.py only once after processing all files
-            subprocess.run(["python", "transferMapNormalizer.py", file_path, offsetX, offsetY])
+        # Call transferMapNormalizer.py only once after processing all files
+        subprocess.run(["python", "transferMapNormalizer.py", file_path, offsetX, offsetY])
 
         print("-" * 30)
