@@ -79,7 +79,7 @@ if __name__ == "__main__":
         # Call the calculate_offset function
         # Define WaferDie coordinates
         WaferDie1 = (40, 13) # TODO: modify
-        WaferDie2 = (6, 7)
+        WaferDie2 = (6, 7) # TODO: modify
         WaferDieArray = []
         WaferDieArray.append(WaferDie1)
         WaferDieArray.append(WaferDie2)
